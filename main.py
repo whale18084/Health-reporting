@@ -11,7 +11,7 @@ driver.find_element_by_xpath('/html/body/div[1]/div[2]/div[2]/div[4]/div[2]/div/
 for handle in driver.window_handles:#方法二，始终获得当前最后的窗口，所以多要多次使用
     driver.switch_to.window(handle)
 time.sleep(2)
-driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[1]/div[2]/div/form/div[18]/div[1]/div/div[2]/div/div/input').send_keys('36.8')
+driver.find_element_by_xpath('/html/body/div[1]/div/div/div/div[1]/div[2]/div/form/div[18]/div[1]/div/div[2]/div/div/input').send_keys("36.8")
 driver.find_element_by_xpath('//*[@id="post"]').click()
 time.sleep(2)
 driver.quit()
